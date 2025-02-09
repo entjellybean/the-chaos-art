@@ -1,0 +1,134 @@
+
+body{
+    margin:0;
+    z-index: 1;
+    padding-bottom: 2rem;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+#backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 5;
+}
+
+#main-header h1{
+    font-size: 350%;
+}
+
+#main-header{
+  display: flex;
+  justify-content: space-evenly;
+  height:10rem;
+  width:100%;
+  margin:0 auto;
+  align-items: center;
+  padding: 2rem 0;
+}
+header ul a:hover{  
+    border-bottom:1px solid rgb(164, 161, 161)
+}
+
+
+
+#logo{
+    width:10rem;
+    height:auto;
+}
+header{
+    display: grid;
+    justify-content: center;
+    padding: 2rem 0;
+}
+header ul{
+    list-style:none ;
+    display: flex;
+    margin:0;
+    padding:0;
+}
+header li{
+    font-size: 200%;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    color:black;
+    border-right: 1px solid rgb(30, 29, 29);
+}
+header li:last-child{
+    border: none;
+}
+
+
+
+
+#side-drawer{
+    width:100%;
+    height: 100%;
+    background-color: rgb(70, 68, 68);
+   position: fixed;
+   display: none;
+    top:0;
+    left:0;
+    z-index: 2;
+}
+
+#side-drawer li{
+    margin: 1rem 0;
+}
+#side-drawer ul{
+    list-style: none;
+    margin: 0;
+    padding: 4rem 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#close-menu-button{
+   margin-left:90% ;
+   margin-top: 5%;
+}
+#side-drawer a{
+    color: white;
+    font-size: 2rem;
+}
+#menu-btn{
+    display: none;
+}
+
+
+
+@media (max-width:1240px){
+  
+    #menu-btn{
+        width:3rem;
+        height: 3rem;
+        display: flex;
+        margin-left:90%;
+        flex-direction: column;
+        justify-content: space-around;
+     }
+     header{
+        display: grid;
+     }
+     #menu-btn span{
+         background-color:black;
+         width: 100%;
+         height: 3px;
+     }
+    #main-header nav{
+        display: none;
+    }
+    header ul{
+        display: none;
+    }
+    #main-header{
+        gap: 1rem;
+        width:90%;
+        margin:0 auto;
+    }
+}

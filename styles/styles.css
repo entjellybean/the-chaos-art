@@ -1,0 +1,63 @@
+.paintingofthemonth{
+    display: grid;
+    justify-content: center;
+}
+.paintingofthemonth img{
+    width:30rem;
+    height:auto;
+}
+#highlight{
+    display: grid;
+    justify-content: center;
+    padding: 1rem 0 2rem;
+}
+p{
+    font-size: 150%;
+}
+h2{
+    font-size: 200%;
+    text-align: center;
+}
+.titles{
+    border: 1px solid rgb(30, 29, 29);
+}
+#ofthe{
+    display: grid;
+    grid-template-columns: repeat(3,25rem);
+    grid-template-rows: repeat(2,25rem);
+    justify-content: space-evenly;
+    gap:2rem;
+}
+#ofthe h2{
+    color: rgb(115, 6, 6);
+}
+#ofthe a{
+ font-size: 180%;
+}
+#ofthe h3{
+font-size: 150%;
+font-style:italic ;
+}
+#ofthe li{
+    list-style: none;
+    padding: 1rem;
+}
+
+@media (max-width:1240px){
+    #ofthe{
+        grid-template-columns: 100%;
+    }
+    .paintingofthemonth p{
+        text-align: center;
+    }
+    .titles{
+        border:none
+    }
+    .paragraph{
+        border-bottom: 1px dotted black;
+        padding-bottom: 2rem;
+    }
+    #ofthe{
+        gap:0;
+    }
+}
