@@ -3,14 +3,16 @@
     justify-content: center;
 }
 .paintingofthemonth img{
-    width:30rem;
+    width:70%;
     height:auto;
+    margin: 0 auto;
 }
+.paintingofthemonth p{text-align: center;}
 #highlight{
     display: grid;
     justify-content: center;
-    padding: 1rem 0 2rem;
 }
+
 p{
     font-size: 150%;
 }
@@ -23,16 +25,16 @@ h2{
 }
 #ofthe{
     display: grid;
-    grid-template-columns: repeat(3,25rem);
-    grid-template-rows: repeat(2,25rem);
+    grid-template-columns: repeat(3, 25rem);
+    grid-template-rows: repeat(2, 30rem);
     justify-content: space-evenly;
-    gap:2rem;
+    gap: 2rem;
 }
 #ofthe h2{
     color: rgb(115, 6, 6);
 }
-#ofthe a{
- font-size: 180%;
+h4{
+    font-size: 180%;
 }
 #ofthe h3{
 font-size: 150%;
@@ -42,22 +44,39 @@ font-style:italic ;
     list-style: none;
     padding: 1rem;
 }
+#ofthe li:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.paragraph{
+    width:90%;
+    margin:0 auto;
+}
 
 @media (max-width:1240px){
     #ofthe{
         grid-template-columns: 100%;
+        justify-content: center; /* Ortalamayı sağlar */
+        gap: 1rem; /* Aralıkları azaltır */
+        margin:0;
+        padding:0;
     }
-    .paintingofthemonth p{
-        text-align: center;
+    #ofthe li {
+        width: 100%; /* Liste öğelerini genişletir */
     }
-    .titles{
-        border:none
+    .paintingofthemonth img{
+        width:100%;
+        margin-left:1rem;
+
     }
-    .paragraph{
-        border-bottom: 1px dotted black;
-        padding-bottom: 2rem;
+    main{
+        margin:0;
+        padding:0;
     }
-    #ofthe{
-        gap:0;
+    .paintingofthemonth{
+        margin:0;
+        padding:0;
+        justify-content: center;
     }
+    
 }
