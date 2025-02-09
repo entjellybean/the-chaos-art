@@ -90,6 +90,44 @@ document.addEventListener('DOMContentLoaded', function () {
         updateCarousel();
     }, 15000); // 4 saniyede bir otomatik kaydırma
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const allImages = Array.from(document.querySelectorAll("#more-images img"));
+    const loadMoreButton = document.getElementById("load-more");
+    let visibleCount = 8; // Başlangıçta kaç resim görünecek
+    
+    function updateGallery() {
+        // Önce tüm resimleri gizle
+        allImages.forEach((img, index) => {
+            if (index < visibleCount) {
+                img.style.display = "block"; // Sadece görünmesi gerekenleri aç
+            } else {
+                img.style.display = "none"; // Diğerlerini kapat
+            }
+        });
+
+        // Buton metnini güncelle
+        if (visibleCount >= allImages.length) {
+            loadMoreButton.textContent = "Show Less";
+        } else {
+            loadMoreButton.textContent = "More";
+        }
+    }
+
+    loadMoreButton.addEventListener("click", function() {
+        if (visibleCount >= allImages.length) {
+            // Eğer tüm resimler açıksa, eski haline döndür
+            visibleCount = 8;
+        } else {
+            // Yoksa, sıradaki 8 fotoğrafı daha aç
+            visibleCount += 8;
+        }
+        updateGallery();
+    });
+
+    // Sayfa yüklendiğinde galeriyi güncelle
+    updateGallery();
+});
+
 
 
 
