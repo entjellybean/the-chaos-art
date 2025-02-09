@@ -131,7 +131,7 @@
     .modal-content {
         width:100%;
     }
-    #photos{
+    .more{
         grid-template-columns: 100%;
         
     }
