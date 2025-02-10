@@ -5,6 +5,27 @@
         justify-content: center;
         display: flex;
  }
+ .turkce-ad{
+    font-style: italic;
+    color: rgb(67, 66, 66);
+ }
+#aboutus{
+    width:70%;
+    margin: 1rem auto;
+}
+#aboutus h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 400%;
+}
+#aboutus h2{
+    text-align: center;
+    color: rgb(66, 66, 66);
+}
+#aboutus p{
+    font-size: 150%;
+}
+
 h2{
     font-size: 250%;
 }
@@ -62,6 +83,9 @@ body{
     border:none;
     font-size: 150%;
     text-align: center;
+}
+#collection-title{
+    margin-right:2rem;
 }
 @media (max-width:1240px){
     body{

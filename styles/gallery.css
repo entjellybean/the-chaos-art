@@ -46,12 +46,12 @@
     margin-top: 2rem;
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(4,20rem);
+    grid-template-columns: repeat(7,10rem);
    gap:2rem;
 }
 .more img{
-    width:20rem;
-    height: 20rem;
+    width:10rem;
+    height: 10rem;
     cursor:pointer;
 }
 #load-more {

@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener("DOMContentLoaded", function() {
     const allImages = Array.from(document.querySelectorAll("#more-images img"));
     const loadMoreButton = document.getElementById("load-more");
-    let visibleCount = 8; // Başlangıçta kaç resim görünecek
+    let visibleCount = 14; // Başlangıçta kaç resim görünecek
     
     function updateGallery() {
         // Önce tüm resimleri gizle
@@ -116,10 +116,10 @@ document.addEventListener("DOMContentLoaded", function() {
     loadMoreButton.addEventListener("click", function() {
         if (visibleCount >= allImages.length) {
             // Eğer tüm resimler açıksa, eski haline döndür
-            visibleCount = 8;
+            visibleCount = 14;
         } else {
             // Yoksa, sıradaki 8 fotoğrafı daha aç
-            visibleCount += 8;
+            visibleCount += 14;
         }
         updateGallery();
     });
