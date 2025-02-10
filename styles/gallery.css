@@ -141,4 +141,7 @@
         justify-content: center;
         display: grid;
     }
+    .photographer{
+        width:100%;
+    }
 }
