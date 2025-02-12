@@ -90,6 +90,36 @@ h5{
     gap:1rem;
     align-items: center;
 }
+#creators{
+    display:grid;
+    grid-template-columns: repeat(3,20rem);
+    justify-content: space-evenly;
+    gap:2rem;
+}
+#creators a{
+    padding: 1rem;
+    display: flex;
+}
+#creators a:hover{
+    text-decoration: underline;
+}
+#creators li{
+    list-style: none;
+    font-size: 120%;
+}
+#everyone p{
+    text-align:center;
+    font-size: 150%;
+}
+#creators img{
+    width:10rem;
+    height:auto;
+    padding: 1rem;
+
+}
+#everyone{
+    display:grid;
+}
 .lucrece-inside img{
     width:80%;
     height: auto;
@@ -155,6 +185,11 @@ h5{
         position:relative;
         overflow-y: visible;
         padding-bottom:2rem;
+    }
+    #creators{
+        grid-template-columns: 100%;
+    margin-left: 0;
+    padding-left:0;
     }
  
 }
