@@ -36,6 +36,10 @@ main{
     list-style: none;
     padding: 1rem 0;   
 }
+#katalog li:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
 #katalog li:last-child{
     border:none;
 }
