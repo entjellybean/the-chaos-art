@@ -195,5 +195,7 @@ h5{
     margin-left: 0;
     padding-left:0;
     }
- 
+    #metin p{
+        font-size: 100%;
+    }
 }
