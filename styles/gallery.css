@@ -3,7 +3,7 @@
 /* Carousel alanı */
 .carousel-container {
     position: relative;
-    width: 45%;
+    width: 45rem;
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
@@ -145,3 +145,5 @@
         width:100%;
     }
 }
+
+

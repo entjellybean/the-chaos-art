@@ -63,6 +63,7 @@ font-style:italic ;
     }
     #ofthe li {
         width: 100%; /* Liste öğelerini genişletir */
+        border:none;
     }
     .paintingofthemonth img{
         width:100%;
